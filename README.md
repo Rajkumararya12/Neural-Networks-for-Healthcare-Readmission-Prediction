@@ -10,9 +10,10 @@ This project develops a neural network model to predict whether a patient is lik
 - Compare model performance using accuracy, precision, recall, F1-score, and ROC-AUC.
 
 ## Dataset
-- **Source:** (Add your dataset source here, e.g., UCI Machine Learning Repository or Kaggle)
-- **Description:** The dataset contains patient demographic, medical, and hospital visit information used for readmission prediction.
-
+- **Description:** Each row represents a hospital visit for a patient. The target variable is
+`readmitted_30_days` (0 = not readmitted, 1 = readmitted). Other columns include
+age, BMI, vitals, chronic conditions, number of previous admissions, length of stay,
+lifestyle factors, and insurance type.
 ## Technologies Used
 - Python
 - Google Colab
@@ -27,7 +28,7 @@ This project develops a neural network model to predict whether a patient is lik
 
 ```
 ├── Neural_Network_Readmission.ipynb
-├── dataset.csv
+├── healthcare_readmission_dataset.csv
 ├── README.md
 └── requirements.txt
 ```
